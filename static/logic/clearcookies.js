@@ -1,0 +1,1 @@
+document.cookie = "_id=; max-age=0;"

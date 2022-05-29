@@ -1,0 +1,72 @@
+<%- include("../partials/head") %>
+	<notification>
+		<h1 class="nospace" style="position:relative;top:50%;transform:translate(0%,-50%);"></h1>
+	</notification>
+	<groupbar expanded="0">
+		<card id="addcard">
+			<h1 class="nospace" style="font-size: 8vh; font-family: Geneva; font-weight: 100;">+</h1>
+		</card>
+	</groupbar>
+	<bartab>
+		<h1 class="nospace">←</h1>
+	</bartab>
+	<h0 class="nospace default">harmony</h0>
+	<div id="page" class="nospace" tabindex="0">
+		<button class="testbutton">
+			<div class="centered">
+				<h1 class="nospace">start test</h1>
+			</div>
+			<span style="position:absolute;bottom:1vh;left:1vh;font-size:2vh;" id="limbocounter">1/5</span>
+		</button>
+		<span id="cardcontainer">
+			<card class="carddeck" id="cardadd" hide="false">
+				<h1 class="nospace" style="font-size: 8vh; font-family: Geneva; font-weight: 100;">+</h1>
+			</card>
+		</span>
+		<ipad>
+			<circle class="homebutton"></circle>
+			<screen>
+				<a id="invite" style="float:right;cursor:pointer;">invite</a>
+				<h1 class="nospace">chat</h1>
+				<div id="chatcontainer"></div>
+				<input type="text" id="chat" placeholder="Type Here...">
+			</screen>
+		</ipad>
+		<div id="contents">
+			<span id="notes" hidden="false">
+				<topbar></topbar>
+				<textarea></textarea>
+			</span>
+			<span id="test"></span>
+		</div>
+		<img src="/static/images/eraserup.svg" class="eraser">
+		<img src="/static/images/pencil.svg" class="pencil">
+		<img src="/static/images/highlighter.svg" class="highlighter">
+	</div>
+	<fullpage id="addgroup">
+		<bigcard>
+			<div class="centered nospace">
+				<center>
+					<h1 class="nospace" style="margin-bottom: 1vh;">group name:</h1>
+					<input type="text" style="width:40vw;text-align: center;font-size:3vh;" id="groupname" autocomplete="off">
+				</center>
+			</div>
+			<div class="nospace" style="position:absolute;bottom:2vh;left:2vh;">
+				<h2 class="nospace">color:</h2>
+				<div class="nospace" style="position:absolute;bottom:0vh;left:8.5vh;width:100vh;">
+					<circle style="background:#FC8181;"></circle>
+					<circle style="background:#FCAD81;"></circle>
+					<circle style="background:#FCE181;"></circle>
+					<circle style="background:#B0EEA6;"></circle>
+					<circle style="background:#81D0FC;"></circle>
+					<circle style="background:#DFB6FF;"></circle>
+				</div>
+			</div>
+			<div id="addgroupbtn" class="nospace" style="position:absolute;bottom:2vh;right:2vh;cursor:pointer;">
+				<h2 class="nospace">submit</h2>
+			</div>
+		</bigcard>
+	</fullpage>
+	<script src="/static/logic/hub.js"></script>
+	<script src="/static/styles/style.js"></script>
+<%- include("../partials/feet") %>

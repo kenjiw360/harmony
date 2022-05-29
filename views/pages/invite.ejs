@@ -1,0 +1,12 @@
+<%- include("../partials/head") %>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
+	<div class="nospace centered" style="text-align:center;">
+		<circle class="nospace" style="text-align:center;cursor:auto;height:30vh;width:30vh;background: <%= color %>;">
+			<h1 class="centered nospace" style="color:white;font-size:25vh;pointer-events:none;font-family: 'M PLUS 1p', sans-serif;"><%= symbol %></h1>
+		</circle>
+		<h1><%= reason %></h1>
+        <a href="/">Return to main</a>
+	</div>
+<%- include("../partials/feet") %>

@@ -1,0 +1,19 @@
+<%- include("../partials/head") %>
+    <bigcard>
+        <div class="nospace centered" style="font-size:3vh;">
+			<center class="nospace">
+				<h0 class="nospace">log in</h0>
+			</center>
+            <p class="nospace" style="margin-top: 1vh;">username: <input type="text" id="username"></p>
+            <p>password: <input type="password" id="password"></p>
+			<br>
+            <center style="cursor: pointer;">
+                <span id="submit">submit</span>
+            </center>
+		</div>
+		<div class="nospace" style="position:absolute;bottom:5vh;left:50%;transform:translate(-50%,0%); font-size: 2.5vh;">
+			<a href="/signup">signup</a>
+		</div>
+    </bigcard>
+	<script src="/static/logic/login.js"></script>
+<%- include("../partials/feet") %>
